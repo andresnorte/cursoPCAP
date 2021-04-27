@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>lesson17.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #0033b3;}
+.s1 { color: #080808;}
+.s2 { color: #008080; font-weight: bold;}
+.s3 { color: #1750eb;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+lesson17.py</font>
+</center></td></tr></table>
+<pre><span class="s0">while True</span><span class="s1">:</span>
+    <span class="s1">i = int(input(</span><span class="s2">&quot;Enter first number: &quot;</span><span class="s1">))</span>
+    <span class="s1">k = int(input(</span><span class="s2">&quot;Enter second number: &quot;</span><span class="s1">))</span>
+
+    <span class="s0">try</span><span class="s1">:</span>
+        <span class="s0">if </span><span class="s1">k == </span><span class="s3">0</span><span class="s1">:</span>
+            <span class="s0">raise </span><span class="s1">Exception (</span><span class="s2">&quot;На ноль делить нельзя!&quot;</span><span class="s1">)</span>
+    <span class="s0">except </span><span class="s1">ZeroDivisionError:</span>
+        <span class="s1">print(</span><span class="s2">&quot;Бесконечность&quot;</span><span class="s1">)</span>
+    <span class="s0">except </span><span class="s1">Exception </span><span class="s0">as </span><span class="s1">exp:</span>
+        <span class="s1">print(exp)</span>
+    <span class="s0">else</span><span class="s1">:</span>
+        <span class="s1">c = i/k</span>
+        <span class="s1">print(c)</span></pre>
+</body>
+</html>
